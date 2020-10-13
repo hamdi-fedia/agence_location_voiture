@@ -13,11 +13,11 @@
                </div>
                <div class="menu">
                   <ul>
-                     <li><a href="portfolio.html">Acceuil</a></li>
-                     <li><a href="#ap">Qui somme nous</a></li>
-                     <li><a href="#co">Nos voitures</a></li>
-                     <li><a href="#po">nos offres</a></li>
-                     <li><a href="#cont"> Contact</a></li>
+                     <li><a href="location_voiture.html">Acceuil</a></li>
+                     <li><a href="#titreapro">Qui somme nous</a></li>
+                     <li><a href="#titrenosp">Nos voitures</a></li>
+                     <li><a href="#titreoff">Nos offres</a></li>
+                     <li><a href="#co"> Contact</a></li>
                      
                   </ul>
                </div>
@@ -34,11 +34,13 @@
     <option value="6">Sousse</option>
     <option value="7">Bizerte</option>
 </select>
+<br>
+<br>
   <label>DÉBUT DE LOCATION</label>
   <input type="datetime-local" id="" name="">
   <label >FIN DE LOCATION</label>
   <input type="datetime-local" id="" name="">
-  <input type="submit" value="reservation">
+  <input type="submit" value="Réserver" >
 </form>
 
 </header>
@@ -73,9 +75,9 @@
     </div>
     <div class="flip-card-back">
      <div class="size">Peugeot 301</div> 
-      <p>3 voiture disponible<br>1 jour de location<br>5 personnes<br>manuelle
+      <p>3 voiture disponible<br>5 personnes<br>manuelle
         <br>essence<br>66 TND Avec caution(1500 TND)
-        <input type="submit" value="reservation">
+        <input type="submit" value="Réserver">
       </p> 
     </div>
   </div>
@@ -90,7 +92,7 @@
     <div class="flip-card-back">
       <div class="size">Clio 4</div>
       <p>2 voiture disponible<br>5 personnes<br>manuelle<br>essence<br>72 TND Avec caution(1500 TND)
-        <input type="submit" value="reservation">
+        <input type="submit" value="Réserver">
       </p> 
     </div>
   </div>
@@ -104,7 +106,7 @@
     <div class="flip-card-back">
       <div class="size">GrandI 10</div>
       <p>2 voiture disponible<br>5 personnes<br>manuelle<br>essence<br>72 TND Avec caution(1500 TND)
-        <input type="submit" value="reservation">
+        <input type="submit" value="Réserver">
       </p> 
     </div>
   </div>
@@ -126,7 +128,7 @@
       <div class="size">Peugeot301</div>
       <p>3 voiture disponible<br>1 jour de location<br>5 personnes<br>manuelle
         <br>essence<br>70 TND Avec caution(1500 TND)
-        <input type="submit" value="reservation">
+        <input type="submit" value="Réserver">
       </p> 
     </div>
   </div>
@@ -141,7 +143,7 @@
       <div class="size">HyundaiI 20</div>
       <p>3 voiture disponible<br>1 jour de location<br>5 personnes<br>manuelle
         <br>essence<br>77 TND Avec caution(1500 TND)
-        <input type="submit" value="reservation">
+        <input type="submit" value="Réserver">
       </p> 
 
     </div>
@@ -158,7 +160,7 @@
       <div class="size">HondaCity</div>
       <p>3 voiture disponible<br>5 personnes<br>manuelle
         <br>essence<br>120 TND Avec caution(1500 TND)
-        <input type="submit" value="reservation">
+        <input type="submit" value="Réserver">
       </p> 
     </div>
   </div>
@@ -166,6 +168,9 @@
 </div>
 
 <div id="titreoff">Nos offres</div> 
+<div class="backoff">
+
+<div class="flex-container1">
 <div class="card">
   <img src="4.jpg" alt="Avatar" style="width:100%">
   <div class="container">
@@ -175,7 +180,7 @@
 </div>
 
 <div class="card">
-  <img src="4.jpg" alt="Avatar" style="width:100%">
+  <img src="3.jpg" alt="Avatar" style="width:100%">
   <div class="container">
     <h4><b>Offre spéciale Week-end:</b></h4>     
     <p>Valable pour une période de location de 3 jours
@@ -183,15 +188,34 @@ Cette offre est uniquement valable pour les prises en charge et retour de véhic
   </div>
 </div>
 
+</div>
+</div>
+
+<div id="co">Contact</div> 
 
 
+<div class="container2">
+    <label>Nom</label>
+    <input type="text" id="fname" name="firstname" placeholder="saisir votre nom"><br>
 
+    <label>Prenom</label>
+    <input type="text" id="lname" name="lastname" placeholder="saisir votre prenom"><br>
+    <label>Sujet</label>
+    <input type="text"  placeholder="sujet"><br>
+
+
+    <label for="subject">Message</label>
+    <textarea id="subject" name="subject" placeholder="saisir votre message" style="height:200px"></textarea> <br><br>
+    <input type="submit" value="Envoyer">
+</div>
+<img class="imgm" src="111.png" height="500" width="400">
+</div>
 
 
 
 <div class="footer">
     <hr>
-            <p><h3>Contact</h3></p>
+            <p><h3 >Contact</h3></p>
             <br />
                 <img src="fb.png" width="40" height="40">
                 <img src="in.png" width="40" height="40">

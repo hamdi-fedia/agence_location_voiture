@@ -1,11 +1,13 @@
-body{
-  background-color:#F1F1F0;
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 /*---------------------------------------------------------nav bar---------------------------------------------------------------*/
 header {
       width: 100vw;
       height: 100vh;
-      background: url(11.jpg);
+      background: url(6.jpg);
       background-size: cover;
 }
 
@@ -59,9 +61,22 @@ li a:hover {
 }
 /*-------------------------------------------------formulaire de reservation--------------------------------------------------------*/
 form{
-  padding:300px 10px 10px 10px;
+  padding:250px 10px 10px 10px;
 }
-input[type=datetime-local] , select {
+select {
+  opacity: 50%
+  width: 25%;
+  padding: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 4px;  
+  box-sizing: border-box;  
+  margin-top: 6px;
+  margin-bottom:16px;
+  resize:vertical;
+
+}
+input[type=datetime-local]{
+  opacity: 50%;
   width: 12%;
   padding: 12px;
   border: 1px solid #ccc; 
@@ -72,14 +87,22 @@ input[type=datetime-local] , select {
   resize:vertical;
   }
   input[type=submit] {
-    background-color:#4CAF50;
+    background-color:transparent;
     color:white;
     padding:15px 20px;
-    border:none; 
+    border:solid 1px; 
     border-radius:4px;
     cursor:pointer;
   }
-
+  input[type=submit]:hover{
+    background-color:#791A1B
+  }
+  label{
+    color:white;
+    font-size: 20px;
+    text-shadow:0 0 4px #000000;
+  }
+/*------------------------------------------------------------a propos-----------------------------------------------------------*/
 .contenair .ps{
   margin-left: 10%;
   margin-top: -550px;
@@ -94,11 +117,7 @@ input[type=datetime-local] , select {
   margin: 450px 100px 150px 500px;
 
 }
-#titrenosp{
-  font-size: 50px;
-  color: #000000;
-  margin: -250px 100px 150px 500px;
-}
+
 .apropos{
   box-shadow: 5px 5px 5px #C1C4BB;
   background-color: #EDF5DC;
@@ -111,7 +130,13 @@ input[type=datetime-local] , select {
   box-shadow: 10px 10px 10px #000000;
   transform: scale(1.5);
 }   
+/*----------------------------------------------------------------nos voitures----------------------------------------------------*/
 
+#titrenosp{
+  font-size: 50px;
+  color: #000000;
+  margin: -250px 100px 150px 500px;
+}
 .size{
   font-size: 20px;
   color: green;
@@ -158,26 +183,77 @@ input[type=datetime-local] , select {
   margin-right: 50px
 
 }
+/*--------------------------------------------------------nos offres--------------------------------------------------------------*/
 #titreoff{
   font-size: 50px;
   color: #000000;
-  margin: -80px 100px 200px 500px;
+  margin: -50px 100px 200px 500px;
 
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   width: 40%;
+  background-color: #EFEFF0;
 }
 .card:hover {
-  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow:0 12px 24px 0 rgba(0,0,0,0.2);
   }
 .container {
   padding:2px 16px;
 }
+.backoff{
+  background:#CECECF;
+}
+.flex-container1 {
+  display: flex;
+  justify-content: space-between;
+  margin: -100px 150px 10px 300px;
+  margin-left:50px;
+  margin-right: 50px;
+}
+/*-----------------------------------------------formulaire de contact-----------------------------------------------------------*/
+#co{
+  font-size: 50px;
+  color: #000000;
+  margin: 30px 100px 30px 500px;
+
+}
+input[type=text], textarea {
+  width: 60%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #e7e7e7;
+  padding: 12px 20px;
+}
 
 
-/* les mise en forme de footer*/
+.container2 {
+  background-color: #FDFDFE;
+  padding: 20px;
+  margin-left: 5%;
+  width: 500px;
+  height: 500px;
+  margin-top: 1px;
+}
+p{
+      font-size: 20px
+
+}
+.imgm{
+  margin: -520px 10px 60px 700px ;
+}
+/*-------------------------------------------------- les mise en forme de footer--------------------------------------------------*/
 .footer {
    line-height: 20px;
    background-color: black;
@@ -193,3 +269,7 @@ input[type=datetime-local] , select {
 .footer p {
   color: white;
 }
+
+
+
+
